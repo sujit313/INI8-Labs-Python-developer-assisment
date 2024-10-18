@@ -1,0 +1,10 @@
+Explanation of Fields:
+
+ID: Auto-incrementing integer, serving as the primary key.
+Name: VARCHAR(100) for storing the user's name.
+Email: VARCHAR(255) for storing the user's email address, with a UNIQUE constraint to ensure uniqueness.
+DateOfBirth: DATE for storing the user's date of birth.
+Gender: VARCHAR(10) for storing the user's gender.
+Address: TEXT for storing the user's address.
+PhoneNumber: VARCHAR(20) for storing the user's phone number.
+RegistrationDate: TIMESTAMP for storing the date and time of registration, with a default value of the current timestamp.

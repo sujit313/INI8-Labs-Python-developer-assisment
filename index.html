@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <form id="registrationForm" action="/register" method="POST">
+        <input type="hidden" name="id" id="id">
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email">
+        <input type="date" name="date_of_birth" placeholder="Date of Birth">
+        <input type="text" name="gender" placeholder="Gender">
+        <textarea name="address" placeholder="Address"></textarea>
+        <input type="text" name="phone_number" placeholder="Phone Number">
+        <input type="hidden" name="registration_date" id="registration_date">
+        <button type="submit">Register</button>
+    </form>
+
+    <div id="usersList"></div>
+
+    <script>
+        const registrationForm = document.getElementById('registrationForm');
+        const usersList = document.getElementById('usersList');
+
+        // ... (rest of the JavaScript code)
+
+        // Populate hidden fields with data from the backend (if applicable)
+        const userId = getFromLocalStorage('userId');
+        if (userId) {
+            document.getElementById('id').value = userId;
+            // ... populate other hidden fields as needed
+        }
+    </script>
+</body>
+</html>
